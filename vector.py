@@ -1,11 +1,3 @@
-'''
-    for i in range(0,N):
-        for t in documents[i]:
-            idf=math.log((N+1)/(1+df[t]))+1
-            doc_vector[i][t]=doc_vector[i][t]*idf
-returns a document vector (doc_vector) which contains term frequency of each word
-and a global vector which is a list of all words in the all tweets
-'''
 import math
 def vectorize(documents):
     N=len(documents)
